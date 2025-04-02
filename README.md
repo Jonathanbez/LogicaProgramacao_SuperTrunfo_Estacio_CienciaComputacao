@@ -1,5 +1,5 @@
 # LogicaProgramacao_SuperTrunfo_Estacio_CienciaComputacao
-Introdução à Programação de Computadores - Tema 2 - Super Trunfo em c: Desenvolvendo a Lógica do Jogo
+Introdução à Programação de Computadores - Tema 2 - Super Trunfo em C: Desenvolvendo a Lógica do Jogo
 
 # Super Trunfo - Nível Aventureiro
 
@@ -29,25 +29,25 @@ O programa permite:
 
 1. Clone o repositório:
 ```bash
- git clone https://github.com/SEU_USUARIO/super-trunfo-aventureiro.git
+ git clone https://github.com/Jonathanbez/LogicaProgramacao_SuperTrunfo_Estacio_CienciaComputacao.git
 ```
 3. Navegue até o diretório:
 ```bash
-   cd super-trunfo-aventureiro
+   cd LogicaProgramacao_SuperTrunfo_Estacio_CienciaComputacao
 ```
 3. Compile o código:
 ```bash
-  gcc super_trunfo.c -o super_trunfo
+  gcc t2_na_da_strunfo.c -o t2_na_da_strunfo
 ```
 Como Executar
 
 Após compilar, execute o programa no terminal (No Linux ou macOS):
 ```bash
-  ./super_trunfo
+  ./t2_na_da_strunfo
 ```
 No Windows:
 ```bash
-  super_trunfo.exe
+  t2_na_da_strunfo.exe
 ```
 
 O programa iniciará no terminal, solicitando o cadastro das cartas e, em seguida, a escolha do atributo para comparação.
