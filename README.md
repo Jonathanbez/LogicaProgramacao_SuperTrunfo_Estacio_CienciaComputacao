@@ -1,5 +1,5 @@
-# LogicaProgramacao_SuperTrunfo_Estacio_CienciaComputacao
-Introdução à Programação de Computadores - Tema 2 - Super Trunfo em C: Desenvolvendo a Lógica do Jogo
+## REPOSITORIO: ## LogicaProgramacao_SuperTrunfo_Estacio_CienciaComputacao
+# Introdução à Programação de Computadores - Tema 2 - Super Trunfo em C: Desenvolvendo a Lógica do Jogo
 
 # Super Trunfo - Nível Aventureiro
 
