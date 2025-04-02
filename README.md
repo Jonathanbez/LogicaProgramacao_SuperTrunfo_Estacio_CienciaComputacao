@@ -28,10 +28,10 @@ O programa permite:
 ## Como Compilar
 
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/SEU_USUARIO/super-trunfo-aventureiro.git
-  ´´´
-2. Navegue até o diretório:
+```bash
+ git clone https://github.com/SEU_USUARIO/super-trunfo-aventureiro.git
+```
+3. Navegue até o diretório:
 ```bash
    cd super-trunfo-aventureiro
 ```
