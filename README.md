@@ -120,4 +120,12 @@ O código está organizado em seções principais:
 - Menu Interativo: Implementado com switch para selecionar o atributo de comparação.
 - Lógica de Comparação: Usa if-else para determinar o vencedor com base no atributo escolhido, com regra especial para densidade demográfica.
 
+  # Autor
+
+    [Jonathan Bezerra] - Estudante de [Ciência da Computação na Estácio].
+    Linkedin - linkedin.com/in/jonathan-bezerra-b483b6148 
   
+#Licença
+
+Este projeto é de uso educacional e não possui uma licença formal. Sinta-se à vontade para usá-lo como referência para estudos.
+
