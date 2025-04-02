@@ -122,8 +122,8 @@ O código está organizado em seções principais:
 
 # Autor
 
-    .[Jonathan Bezerra] - Estudante de .[Ciência da Computação na Estácio].
-    Linkedin - linkedin.com/in/jonathan-bezerra-b483b6148 
+   Jonathan Bezerra - Estudante de Ciência da Computação na Estácio
+   Linkedin - linkedin.com/in/jonathan-bezerra-b483b6148 
   
 # Licença
 
