@@ -24,14 +24,6 @@ O programa permite:
 - **Densidade Demográfica:** Menor valor ganha 1 ponto.
 - Empates não dão pontos.
 
-## Como Usar
-1. Cadastre a carta do Jogador 1 (País, População, Área, PIB, Pontos Turísticos).
-2. Cadastre a carta do Jogador 2.
-3. Escolha:
-   - `A`: Comparar 2 atributos (digite dois números de 1 a 5).
-   - `B`: Comparar todos os atributos.
-4. Veja o resultado com os pontos e o vencedor.
-
 ## Pré-requisitos
 
 - Compilador C (ex.: GCC).
@@ -63,6 +55,14 @@ No Windows:
 ```
 
 O programa iniciará no terminal, solicitando o cadastro das cartas e, em seguida, a escolha do atributo para comparação.
+
+## Como Usar
+1. Cadastre a carta do Jogador 1 (País, População, Área, PIB, Pontos Turísticos).
+2. Cadastre a carta do Jogador 2.
+3. Escolha:
+   - `A`: Comparar 2 atributos (digite dois números de 1 a 5).
+   - `B`: Comparar todos os atributos.
+4. Veja o resultado com os pontos e o vencedor.
 
 ## Exemplo de Uso
 
@@ -135,166 +135,6 @@ Jogador 1: 1 pontos
 Jogador 2: 1 pontos
 Vencedor: Empate
 ```
-Aqui está a atualização do README.md com base no código mais recente que você forneceu e na última parte que você mencionou. A seção "Estrutura do Código" foi ajustada para refletir o código atual, mantendo as informações do autor e licença como você especificou.
-markdown
-# Jogo Super Trunfo
-
-Este é um jogo em C onde dois jogadores cadastram cartas de países e competem com base em atributos como População, Área, PIB, Pontos Turísticos e Densidade Demográfica.
-
-## Regras
-- **População, Área, PIB, Pontos Turísticos:** Maior valor ganha 1 ponto.
-- **Densidade Demográfica:** Menor valor ganha 1 ponto.
-- Empates não dão pontos.
-
-## Como Usar
-1. Cadastre a carta do Jogador 1 (País, População, Área, PIB, Pontos Turísticos).
-2. Cadastre a carta do Jogador 2.
-3. Escolha:
-   - `A`: Comparar 2 atributos (digite dois números de 1 a 5).
-   - `B`: Comparar todos os atributos.
-4. Veja o resultado com os pontos e o vencedor.
-
-## Exemplos com Dados Reais (Brasil vs Canadá)
-
-### Opção A (Densidade e Pontos Turísticos)
-**Entrada:**
-
-JOGO SUPER TRUNFO!
-JOGADOR 1 - CADASTRE A CARTA
-
-País:
-Brasil
-População:
-203080756
-Área:
-8510418
-Digite o PIB:
-2130000000000
-Quantidade de Pontos Turísticos:
-500
-
-JOGADOR 2 - CADASTRE A CARTA
-
-País:
-Canadá
-População:
-41528680
-Área:
-9984670
-Digite o PIB:
-2140000000000
-Quantidade de Pontos Turísticos:
-400
-
-*** ESCOLHA DA COMPARAÇÃO ***
-A. Escolha 2 atributos
-B. Escolha todos os atributos
-Digite o tipo de comparação (A ou B):
-A
-
-*** Escolha quais atributos das cartas para comparação ***
-
-    População
-    Área
-    PIB
-    Pontos Turísticos
-    Densidade Demográfica Escolha o primeiro atributo(1-5): 5 Escolha o segundo atributo(1-5): 4
-
-text
-
-**Saída:**
-
-DADOS CARTA 1 - JOGADOR 1
-JOGADOR 1 - País: Brasil
-JOGADOR 1 - População: 203080756
-JOGADOR 1 - Área: 8510418.00
-JOGADOR 1 - PIB: 2130000000000.00
-JOGADOR 1 - Pontos Turísticos: 500
-JOGADOR 1 - Densidade demográfica: 23.862606
-
-DADOS CARTA 2 - JOGADOR 2
-JOGADOR 2 - País: Canadá
-JOGADOR 2 - População: 41528680
-JOGADOR 2 - Área: 9984670.00
-JOGADOR 2 - PIB: 2140000000000.00
-JOGADOR 2 - Pontos Turísticos: 400
-JOGADOR 2 - Densidade demográfica: 4.159244
-
-Densidade - Jogador 1: 23.86 vs Jogador 2: 4.16
-Pontos Turísticos - Jogador 1: 500 vs Jogador 2: 400
-
-RESULTADO:
-Jogador 1: 1 pontos
-Jogador 2: 1 pontos
-Vencedor: Empate
-text
-
-### Opção B (Todos os Atributos)
-**Entrada:**
-
-JOGO SUPER TRUNFO!
-JOGADOR 1 - CADASTRE A CARTA
-
-País:
-Brasil
-População:
-203080756
-Área:
-8510418
-Digite o PIB:
-2130000000000
-Quantidade de Pontos Turísticos:
-500
-
-JOGADOR 2 - CADASTRE A CARTA
-
-País:
-Canadá
-População:
-41528680
-Área:
-9984670
-Digite o PIB:
-2140000000000
-Quantidade de Pontos Turísticos:
-400
-
-*** ESCOLHA DA COMPARAÇÃO ***
-A. Escolha 2 atributos
-B. Escolha todos os atributos
-Digite o tipo de comparação (A ou B):
-B
-text
-
-**Saída:**
-
-DADOS CARTA 1 - JOGADOR 1
-JOGADOR 1 - País: Brasil
-JOGADOR 1 - População: 203080756
-JOGADOR 1 - Área: 8510418.00
-JOGADOR 1 - PIB: 2130000000000.00
-JOGADOR 1 - Pontos Turísticos: 500
-JOGADOR 1 - Densidade demográfica: 23.862606
-
-DADOS CARTA 2 - JOGADOR 2
-JOGADOR 2 - País: Canadá
-JOGADOR 2 - População: 41528680
-JOGADOR 2 - Área: 9984670.00
-JOGADOR 2 - PIB: 2140000000000.00
-JOGADOR 2 - Pontos Turísticos: 400
-JOGADOR 2 - Densidade demográfica: 4.159244
-
-População - Jogador 1: 203080756 vs Jogador 2: 41528680
-Area - Jogador 1: 8510418.00 vs Jogador 2: 9984670.00
-PIB - Jogador 1: 2130000000000.00 vs Jogador 2: 2140000000000.00
-Pontos Turísticos - Jogador 1: 500 vs Jogador 2: 400
-Densidade = Jogador 1: 23.86 vs Jogador 2: 4.16
-
-RESULTADO:
-Jogador 1: 2 pontos
-Jogador 2: 3 pontos
-Vencedor: Jogador 2
-text
 
 ## Estrutura do Código
 
