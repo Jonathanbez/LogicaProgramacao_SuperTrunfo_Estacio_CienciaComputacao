@@ -2,7 +2,7 @@
 
 # Super Trunfo - Nível Aventureiro
 
-Este é um projeto em C desenvolvido como parte de um desafio da faculdade, nível "Aventureiro". O programa implementa uma versão interativa do jogo Super Trunfo, onde dois jogadores cadastram cartas representando países e competem com base em atributos escolhidos via menu.
+Este é um projeto em C desenvolvido como parte de um exercicio da faculdade Estácio graduacao em Ciência da Computação, nível "Mestre". O programa implementa uma versão interativa do jogo Super Trunfo, onde dois jogadores cadastram cartas representando países e competem com base em atributos escolhidos via menu.
 
 ## Descrição
 
@@ -18,6 +18,19 @@ O programa permite:
 3. **PIB** (float): Maior valor vence.
 4. **Pontos Turísticos** (int): Maior valor vence.
 5. **Densidade Demográfica** (float): Menor valor vence.
+
+## Regras
+- **População, Área, PIB, Pontos Turísticos:** Maior valor ganha 1 ponto.
+- **Densidade Demográfica:** Menor valor ganha 1 ponto.
+- Empates não dão pontos.
+
+## Como Usar
+1. Cadastre a carta do Jogador 1 (País, População, Área, PIB, Pontos Turísticos).
+2. Cadastre a carta do Jogador 2.
+3. Escolha:
+   - `A`: Comparar 2 atributos (digite dois números de 1 a 5).
+   - `B`: Comparar todos os atributos.
+4. Veja o resultado com os pontos e o vencedor.
 
 ## Pré-requisitos
 
@@ -36,17 +49,17 @@ O programa permite:
 ```
 3. Compile o código:
 ```bash
-  gcc t2_na_da_strunfo.c -o t2_na_da_strunfo
+  gcc t2_nm_da_strunfo.c -o t2_nm_da_strunfo
 ```
 Como Executar
 
 Após compilar, execute o programa no terminal (No Linux ou macOS):
 ```bash
-  ./t2_na_da_strunfo
+  ./t2_nm_da_strunfo
 ```
 No Windows:
 ```bash
-  t2_na_da_strunfo.exe
+  t2_nm_da_strunfo.exe
 ```
 
 O programa iniciará no terminal, solicitando o cadastro das cartas e, em seguida, a escolha do atributo para comparação.
@@ -63,69 +76,245 @@ Brasil
 População: 
 203080756
 Área: 
-8510417.771
+8510418
 Digite o PIB: 
-4101000000000
+2130000000000
 Quantidade de Pontos Turísticos: 
-540
+500
 
 JOGADOR 2 - CADASTRE A CARTA
 
 País: 
 Canadá
 População: 
-38005238
+41528680
 Área: 
 9984670
 Digite o PIB: 
-1808995000000
+2140000000000
 Quantidade de Pontos Turísticos: 
-450
+400
+
+*** ESCOLHA DA COMPARAÇÃO ***
+A. Escolha 2 atributos
+B. Escolha todos os atributos
+Digite o tipo de comparação (A ou B): 
+A
+
+*** Escolha quais atributos das cartas para comparação ***
+1. População
+2. Área
+3. PIB
+4. Pontos Turísticos
+5. Densidade Demográfica
+Escolha o primeiro atributo(1-5): 5
+Escolha o segundo atributo(1-5): 4
+
+OUTPUT:
 DADOS CARTA 1 - JOGADOR 1
 JOGADOR 1 - País: Brasil
 JOGADOR 1 - População: 203080756
 JOGADOR 1 - Área: 8510418.00
-JOGADOR 1 - PIB: 4100999872512.00
-JOGADOR 1 - Pontos Turísticos: 540
+JOGADOR 1 - PIB: 2130000000000.00
+JOGADOR 1 - Pontos Turísticos: 500
 JOGADOR 1 - Densidade demográfica: 23.862606
+
 DADOS CARTA 2 - JOGADOR 2
 JOGADOR 2 - País: Canadá
-JOGADOR 2 - População: 38005238
+JOGADOR 2 - População: 41528680
 JOGADOR 2 - Área: 9984670.00
-JOGADOR 2 - PIB: 1808995057664.00
-JOGADOR 2 - Pontos Turísticos: 450
-JOGADOR 2 - Densidade demográfica: 3.806359
+JOGADOR 2 - PIB: 2140000000000.00
+JOGADOR 2 - Pontos Turísticos: 400
+JOGADOR 2 - Densidade demográfica: 4.159244
 
-ESCOLHA DA COMPARAÇÃO
-1. População
-2. Área
-3. PIB
-4. Pontos Tuísticos
-5. Densidade Demogŕafica
-Digite a opção (1-5): 5
-Comparação entre Densidade Demográfica: 
-Pais 1: Brasil - Densidade Demográfica: 23.86
-Pais 2: Canadá - Densidade Demográfica: 3.81
-VENCEDOR: Canadá - JOGADOR 2
+Densidade - Jogador 1: 23.86 vs Jogador 2: 4.16
+Pontos Turísticos - Jogador 1: 500 vs Jogador 2: 400
+
+RESULTADO:
+Jogador 1: 1 pontos
+Jogador 2: 1 pontos
+Vencedor: Empate
 ```
+Aqui está a atualização do README.md com base no código mais recente que você forneceu e na última parte que você mencionou. A seção "Estrutura do Código" foi ajustada para refletir o código atual, mantendo as informações do autor e licença como você especificou.
+markdown
+# Jogo Super Trunfo
+
+Este é um jogo em C onde dois jogadores cadastram cartas de países e competem com base em atributos como População, Área, PIB, Pontos Turísticos e Densidade Demográfica.
+
+## Regras
+- **População, Área, PIB, Pontos Turísticos:** Maior valor ganha 1 ponto.
+- **Densidade Demográfica:** Menor valor ganha 1 ponto.
+- Empates não dão pontos.
+
+## Como Usar
+1. Cadastre a carta do Jogador 1 (País, População, Área, PIB, Pontos Turísticos).
+2. Cadastre a carta do Jogador 2.
+3. Escolha:
+   - `A`: Comparar 2 atributos (digite dois números de 1 a 5).
+   - `B`: Comparar todos os atributos.
+4. Veja o resultado com os pontos e o vencedor.
+
+## Exemplos com Dados Reais (Brasil vs Canadá)
+
+### Opção A (Densidade e Pontos Turísticos)
+**Entrada:**
+
+JOGO SUPER TRUNFO!
+JOGADOR 1 - CADASTRE A CARTA
+
+País:
+Brasil
+População:
+203080756
+Área:
+8510418
+Digite o PIB:
+2130000000000
+Quantidade de Pontos Turísticos:
+500
+
+JOGADOR 2 - CADASTRE A CARTA
+
+País:
+Canadá
+População:
+41528680
+Área:
+9984670
+Digite o PIB:
+2140000000000
+Quantidade de Pontos Turísticos:
+400
+
+*** ESCOLHA DA COMPARAÇÃO ***
+A. Escolha 2 atributos
+B. Escolha todos os atributos
+Digite o tipo de comparação (A ou B):
+A
+
+*** Escolha quais atributos das cartas para comparação ***
+
+    População
+    Área
+    PIB
+    Pontos Turísticos
+    Densidade Demográfica Escolha o primeiro atributo(1-5): 5 Escolha o segundo atributo(1-5): 4
+
+text
+
+**Saída:**
+
+DADOS CARTA 1 - JOGADOR 1
+JOGADOR 1 - País: Brasil
+JOGADOR 1 - População: 203080756
+JOGADOR 1 - Área: 8510418.00
+JOGADOR 1 - PIB: 2130000000000.00
+JOGADOR 1 - Pontos Turísticos: 500
+JOGADOR 1 - Densidade demográfica: 23.862606
+
+DADOS CARTA 2 - JOGADOR 2
+JOGADOR 2 - País: Canadá
+JOGADOR 2 - População: 41528680
+JOGADOR 2 - Área: 9984670.00
+JOGADOR 2 - PIB: 2140000000000.00
+JOGADOR 2 - Pontos Turísticos: 400
+JOGADOR 2 - Densidade demográfica: 4.159244
+
+Densidade - Jogador 1: 23.86 vs Jogador 2: 4.16
+Pontos Turísticos - Jogador 1: 500 vs Jogador 2: 400
+
+RESULTADO:
+Jogador 1: 1 pontos
+Jogador 2: 1 pontos
+Vencedor: Empate
+text
+
+### Opção B (Todos os Atributos)
+**Entrada:**
+
+JOGO SUPER TRUNFO!
+JOGADOR 1 - CADASTRE A CARTA
+
+País:
+Brasil
+População:
+203080756
+Área:
+8510418
+Digite o PIB:
+2130000000000
+Quantidade de Pontos Turísticos:
+500
+
+JOGADOR 2 - CADASTRE A CARTA
+
+País:
+Canadá
+População:
+41528680
+Área:
+9984670
+Digite o PIB:
+2140000000000
+Quantidade de Pontos Turísticos:
+400
+
+*** ESCOLHA DA COMPARAÇÃO ***
+A. Escolha 2 atributos
+B. Escolha todos os atributos
+Digite o tipo de comparação (A ou B):
+B
+text
+
+**Saída:**
+
+DADOS CARTA 1 - JOGADOR 1
+JOGADOR 1 - País: Brasil
+JOGADOR 1 - População: 203080756
+JOGADOR 1 - Área: 8510418.00
+JOGADOR 1 - PIB: 2130000000000.00
+JOGADOR 1 - Pontos Turísticos: 500
+JOGADOR 1 - Densidade demográfica: 23.862606
+
+DADOS CARTA 2 - JOGADOR 2
+JOGADOR 2 - País: Canadá
+JOGADOR 2 - População: 41528680
+JOGADOR 2 - Área: 9984670.00
+JOGADOR 2 - PIB: 2140000000000.00
+JOGADOR 2 - Pontos Turísticos: 400
+JOGADOR 2 - Densidade demográfica: 4.159244
+
+População - Jogador 1: 203080756 vs Jogador 2: 41528680
+Area - Jogador 1: 8510418.00 vs Jogador 2: 9984670.00
+PIB - Jogador 1: 2130000000000.00 vs Jogador 2: 2140000000000.00
+Pontos Turísticos - Jogador 1: 500 vs Jogador 2: 400
+Densidade = Jogador 1: 23.86 vs Jogador 2: 4.16
+
+RESULTADO:
+Jogador 1: 2 pontos
+Jogador 2: 3 pontos
+Vencedor: Jogador 2
+text
+
 ## Estrutura do Código
 
 O código está organizado em seções principais:
 
-- Cabeçalhos: Inclui <stdio.h>, <stdlib.h>, <time.h> (não usado neste nível) e <string.h> para manipulação de strings.
-- Declaração de Variáveis: Define variáveis para armazenar os dados das cartas (nome, população, área, PIB, pontos turísticos e densidade).
-- Entrada de Dados: Usa fgets() para ler o nome do país e scanf() para números, com getchar() para limpar o buffer de entrada.
-- Exibição de Dados: Mostra os dados cadastrados de cada carta.
-- Menu Interativo: Implementado com switch para selecionar o atributo de comparação.
-- Lógica de Comparação: Usa if-else para determinar o vencedor com base no atributo escolhido, com regra especial para densidade demográfica.
+- **Cabeçalhos:** Inclui `<stdio.h>` para entrada/saída, `<stdlib.h>` para funções padrão e `<string.h>` para manipulação de strings.
+- **Declaração de Variáveis:** Define variáveis para os dados das cartas (nome do país como string, população e pontos turísticos como inteiros, área e PIB como floats, densidade calculada como float) e controle do jogo (opção, atributos escolhidos, somas de pontos).
+- **Entrada de Dados:** Usa `fgets()` para ler o nome do país e `scanf()` para números, com `getchar()` para limpar o buffer após entradas numéricas.
+- **Cálculo da Densidade:** Calcula a densidade demográfica dividindo população por área para cada carta.
+- **Exibição de Dados:** Mostra os dados cadastrados de cada carta com formatação específica (ex.: %.2f para floats).
+- **Menu Interativo:** Usa `switch` para escolher entre comparar 2 atributos (opção A) ou todos (opção B), com sub-`switch` para selecionar atributos na opção A.
+- **Lógica de Comparação:** Emprega operadores ternários (`?:`) para atribuir pontos (1 ou 0) com base em comparações, com regra especial para densidade (menor vence), e `if-else` para verificar atributos duplicados na opção A.
 
-# Autor
+## Autor
 
-   Jonathan Bezerra - Estudante de Ciência da Computação na Estácio
-   
-   Linkedin - http://linkedin.com/in/jonathan-bezerra-b483b6148
-  
-# Licença
+Jonathan Bezerra - Estudante de Ciência da Computação na Estácio
+
+LinkedIn - [http://linkedin.com/in/jonathan-bezerra-b483b6148](http://linkedin.com/in/jonathan-bezerra-b483b6148)
+
+## Licença
 
 Este projeto é de uso educacional e não possui uma licença formal. Sinta-se à vontade para usá-lo como referência para estudos.
 
